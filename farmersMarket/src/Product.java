@@ -1,5 +1,3 @@
-package farmersMarket;
-
 import java.util.ArrayList;
 
 public class Product {

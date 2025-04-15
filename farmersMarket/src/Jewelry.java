@@ -1,5 +1,3 @@
-package farmersMarket;
-
 public class Jewelry extends Product {
    
 	private String material;

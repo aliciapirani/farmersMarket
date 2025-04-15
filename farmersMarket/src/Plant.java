@@ -1,5 +1,3 @@
-package farmersMarket;
-
 public class Plant extends Product {
     
 	private String flowerColor;

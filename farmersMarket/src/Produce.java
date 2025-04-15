@@ -1,5 +1,3 @@
-package farmersMarket;
-
 public class Produce extends Product {
     
 	boolean isOrganic;
