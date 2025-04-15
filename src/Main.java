@@ -8,11 +8,12 @@ public class Main {
         
           Produce lettuce = new Produce("Lettuce", 2.99, 5, false);
 
-        System.out.println(tulip);
-        System.out.println(necklace);
-        System.out.println(lettuce);
+//        System.out.println(tulip);
+//        System.out.println(necklace);
+//        System.out.println(lettuce);
 
 
-        
+        Market market = new Market(); 
+        market.run();
     }
 }
