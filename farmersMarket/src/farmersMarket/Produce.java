@@ -4,11 +4,16 @@ public class Produce extends Product {
     
 	boolean isOrganic;
 	
+	//constructor 
+	public Produce(String name, double price, int stock, boolean isOrganic) { 
+		super(name, price, stock); 
+		this.isOrganic = isOrganic;
+	}
+
 	//generate getters and setters
 	public boolean isOrganic() {
 		return isOrganic;
 	}
-
 
 	public void setOrganic(boolean isOrganic) {
 		this.isOrganic = isOrganic;

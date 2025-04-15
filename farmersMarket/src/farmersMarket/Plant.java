@@ -6,6 +6,14 @@ public class Plant extends Product {
 	private double inchesWaterNeeded; 
 	private int hoursSunlightNeeded;
 	
+	//constructor 
+	public Plant(String name, double price, int stock, String flowerColor, double inchesWaterNeeded, int hoursSunlightNeeded) { 
+		super(name, price, stock);
+		this.flowerColor = flowerColor; 
+		this.inchesWaterNeeded = inchesWaterNeeded; 
+		this.hoursSunlightNeeded = hoursSunlightNeeded;
+	}
+	
 	//generate getters and setters
 	public String getFlowerColor() {
 		return flowerColor;
@@ -38,7 +46,7 @@ public class Plant extends Product {
 		super.printProductInfo();
 		System.out.println("Flower Color: " + flowerColor);
 		System.out.println("Inches of water needed per day: " + inchesWaterNeeded +" inches");
-		System.out.println("Hours of sunlight needed per day: " + hoursSunlightNeeded);
+		System.out.println("Hours of sunlight needed per day: " + hoursSunlightNeeded + " hours");
 	}
 
 }
