@@ -19,10 +19,12 @@ public class Jewelry extends Product {
 	
 	//print method from product that has been overridden based on jewelry class
 	@Override
-	public void printProductInfo() { 
-		super.printProductInfo();
-		System.out.println("Material piece is made out of: " + material);
+	public String toString() { 
+		String outputString = "";
+		outputString += super.toString();
+		outputString += "Material piece is made out of: " + material + "\n";
+		return outputString;
+		
 	}
-
 		
 }

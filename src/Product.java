@@ -82,9 +82,9 @@ public class Product {
 	}
 
 	//print product name and price which can be overridden by inherited classes
-	public void printProductInfo() {
-		System.out.println("Name: " + name);
-		System.out.println("Price: $" + String.format("%.2f", price));
+	public String toString() {
+		String outputString = "Name: " + name + "\n" + "Price: $" + String.format("%.2f", price) + "\n";
+		return outputString;
 		
 	}
 	

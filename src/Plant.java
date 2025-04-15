@@ -40,11 +40,12 @@ public class Plant extends Product {
 	
 	//print method from product that has been overridden based on plant class
 	@Override
-	public void printProductInfo() { 
-		super.printProductInfo();
-		System.out.println("Flower Color: " + flowerColor);
-		System.out.println("Inches of water needed per day: " + inchesWaterNeeded +" inches");
-		System.out.println("Hours of sunlight needed per day: " + hoursSunlightNeeded + " hours");
+	public String toString() { 
+		String outputString = "";
+		outputString += super.toString();
+		outputString += "Flower Color: " + flowerColor + "\n" + "Inches of water needed per day: " + inchesWaterNeeded +" inches" + "\n" + "Hours of sunlight needed per day: " + hoursSunlightNeeded + " hours" + "\n";
+		return outputString;
+		
 	}
 
 }

@@ -19,13 +19,17 @@ public class Produce extends Product {
 
 	//print method from product that has been overridden based on produce class
 	@Override
-	public void printProductInfo() { 
-		super.printProductInfo();
+	public String toString() { 
+		String outputString = "";
+		outputString += super.toString();
 		if (isOrganic) { 
 			System.out.println("This product is organic.");
 		} else if (!isOrganic) { 
 			System.out.println("This product is not organic.");
 		}
+		
+		return outputString;
+		
 	}
 	
 }
