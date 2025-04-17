@@ -12,8 +12,25 @@ public class Main {
 //        System.out.println(necklace);
 //        System.out.println(lettuce);
 
+          Market market = new Market(); 
 
-        Market market = new Market(); 
-        market.run();
+          
+     	  Vendor flowerShop = new Vendor("flowerShop"); 
+
+     	  market.addVendor(flowerShop);
+     	  
+     	  flowerShop.addProduct(tulip);
+     	  
+     	 Customer customer = new Customer("Guest");
+
+          
+     	  market.run();
+        
+        
+        
+       
+
+        
+
     }
 }
