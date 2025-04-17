@@ -81,9 +81,9 @@ public class Product {
 		this.totalSold = totalSold;
 	}
 
-	//print product name and price which can be overridden by inherited classes
+	//print product name, price, stock quantity which can be overridden by inherited classes
 	public String toString() {
-		String outputString = "Name: " + name + "\n" + "Price: $" + String.format("%.2f", price) + "\n";
+		String outputString = "Name: " + name + "\n" + "Price: $" + String.format("%.2f", price) + "\n" + "Quantity In Stock: " + stock + "\n";
 		return outputString;
 		
 	}
