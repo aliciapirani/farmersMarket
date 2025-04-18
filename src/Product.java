@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Product {
    
@@ -8,6 +9,8 @@ public class Product {
 	protected int stock; 
 	protected int totalSold = 0;
 	protected ArrayList<Integer> reviews = new ArrayList<>();
+	protected HashSet<String> reviewers = new HashSet<>(); //prevent duplicate customer reviews. limits each customer to review each product once. 
+
 	
 	//constructor 
 	public Product(String name, double price, int stock) {
@@ -30,10 +33,21 @@ public class Product {
 	}
 	
 	//add review method
-	public void addReview(int rating) { 
-		if (rating >=1 && rating <=5) { 
-			reviews.add(rating);
-		}
+//	public void addReview(int rating) { 
+//		if (rating >=1 && rating <=5) { 
+//			reviews.add(rating);
+//		}
+//	}
+	
+	//add review method with hashset to prevent duplicates using customer name
+	public void addReview(Customer customer, int rating) {
+	    if (rating >= 1 && rating <= 5 && !reviewers.contains(customer.getName())) {  // Check HashSet
+	        reviews.add(rating);
+	        reviewers.add(customer.getName());  //add customer name to prevent duplicate review
+	        System.out.println("Thank you for leaving a review for " + this.name + "!");
+	    } else {
+	        System.out.println("You have already reviewed this product or the rating is invalid.");
+	    }
 	}
 	
 	//see average rating method 

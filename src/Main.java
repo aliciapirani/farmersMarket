@@ -15,17 +15,20 @@ public class Main {
           Market market = new Market(); 
 
           
-     	  Vendor flowerShop = new Vendor("flowerShop"); 
+     	  Vendor flowerShop = new Vendor("Flower Shop"); 
 
      	  market.addVendor(flowerShop);
      	  
      	  flowerShop.addProduct(tulip);
      	  
-     	 Customer customer = new Customer("Guest");
-
+     	  
+          flowerShop.sellProduct("tulip");
+         
+         
           
+     	 
      	  market.run();
-        
+         
         
         
        
