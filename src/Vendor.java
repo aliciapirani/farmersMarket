@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+
 public class Vendor {
    private String name;
    private HashMap<String, Product> inventory;
