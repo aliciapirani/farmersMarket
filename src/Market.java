@@ -155,7 +155,6 @@ public class Market {
 	
 	//vendor menu
 	private void vendorMenu() {
-	    Vendor vendor = new Vendor("Vendor1"); //add real vendor objects when integrated with the main system
 	    
 	    	while (true) { 
 	    		System.out.println("\n" + "Welcome Vendor! Please make a selection from the list below.");
