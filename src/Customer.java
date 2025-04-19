@@ -1,7 +1,6 @@
 public class Customer {
 
     private String name;
-//    private ArrayList<Product> purchasedProducts = new ArrayList<>();
 
     //constructor
     public Customer(String name) {
