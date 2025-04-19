@@ -6,6 +6,8 @@ public class Market {
 
 	private ArrayList<Vendor> vendors = new  ArrayList<>();
 	private Scanner scnr = new Scanner(System.in);
+	String[] marketDays = {"Saturday", "Sunday"};
+
 	
 	//add a new vendor object to the arrayList of vendors 
 	public void addVendor(Vendor vendor) { 
@@ -14,10 +16,14 @@ public class Market {
 	
 	//choose if you are a customer or vendor 
 	public void run() { 
-		System.out.println("Welcome to our Farmers Market!" + "\n" + "Created by: Alicia Pirani, Ella Tedesco, and Peyton Strickland." + "\n");
+		System.out.println("Welcome to our Farmers Market!" + "\n" + "Created by: Alicia Pirani, Ella Tedesco, and Peyton Strickland.\n");
+		System.out.println("*Reminder*\nMarket is open only on these days:");
+		for (String day : marketDays) {
+		    System.out.println("- " + day);
+		}
 		
 		while (true) { 
-			System.out.println("Are you a:");
+			System.out.println("\nAre you a:");
 			System.out.println("1. Customer");
 			System.out.println("2. Vendor");
 			System.out.println("3. Exit");

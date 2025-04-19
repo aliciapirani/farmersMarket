@@ -22,7 +22,7 @@ public class Main {
      	  flowerShop.addProduct(tulip);
      	  
      	  
-          flowerShop.sellProduct("tulip");
+//          flowerShop.sellProduct("tulip");
          
          
           
