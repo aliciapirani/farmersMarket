@@ -1,15 +1,15 @@
 public class Plant extends Product {
     
 	private String flowerColor;
-	private double inchesWaterNeeded; 
-	private int hoursSunlightNeeded;
+	private double inchesWaterNeededPerWeek; 
+	private int hoursSunlightNeededPerDay;
 	
 	//constructor 
-	public Plant(String name, double price, int stock, String flowerColor, double inchesWaterNeeded, int hoursSunlightNeeded) { 
+	public Plant(String name, double price, int stock, String flowerColor, double inchesWaterNeededPerWeek, int hoursSunlightNeededPerDay) { 
 		super(name, price, stock);
 		this.flowerColor = flowerColor; 
-		this.inchesWaterNeeded = inchesWaterNeeded; 
-		this.hoursSunlightNeeded = hoursSunlightNeeded;
+		this.inchesWaterNeededPerWeek = inchesWaterNeededPerWeek; 
+		this.hoursSunlightNeededPerDay = hoursSunlightNeededPerDay;
 	}
 	
 	//generate getters and setters
@@ -21,20 +21,20 @@ public class Plant extends Product {
 		this.flowerColor = flowerColor;
 	}
 
-	public double getInchesWaterNeeded() {
-		return inchesWaterNeeded;
+	public double getInchesWaterNeededPerWeek() {
+		return inchesWaterNeededPerWeek;
 	}
 
-	public void setInchesWaterNeeded(double inchesWaterNeeded) {
-		this.inchesWaterNeeded = inchesWaterNeeded;
+	public void setInchesWaterNeededPerWeek(double inchesWaterNeededPerWeek) {
+		this.inchesWaterNeededPerWeek = inchesWaterNeededPerWeek;
 	}
 
-	public int getHoursSunlightNeeded() {
-		return hoursSunlightNeeded;
+	public int getHoursSunlightNeededPerDay() {
+		return hoursSunlightNeededPerDay;
 	}
 
-	public void setHoursSunlightNeeded(int hoursSunlightNeeded) {
-		this.hoursSunlightNeeded = hoursSunlightNeeded;
+	public void setHoursSunlightNeededPerDay(int hoursSunlightNeeded) {
+		this.hoursSunlightNeededPerDay = hoursSunlightNeeded;
 	}
 	
 	
@@ -43,7 +43,7 @@ public class Plant extends Product {
 	public String toString() { 
 		String outputString = "";
 		outputString += super.toString();
-		outputString += "Flower Color: " + flowerColor + "\n" + "Inches of water needed per day: " + inchesWaterNeeded +" inches" + "\n" + "Hours of sunlight needed per day: " + hoursSunlightNeeded + " hours" + "\n";
+		outputString += "Flower Color: " + flowerColor + "\n" + "Inches of water needed per week: " + inchesWaterNeededPerWeek +" inches" + "\n" + "Hours of sunlight needed per day: " + hoursSunlightNeededPerDay + " hours" + "\n";
 		return outputString;
 		
 	}

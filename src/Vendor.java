@@ -13,7 +13,7 @@ public class Vendor {
    public void addProduct(Product product) {
        inventory.put(product.getName(), product);
    }
-   // Decrease quantity instead of deleting
+   //decrease quantity instead of deleting
    public Product sellProduct(String productName) {
        Product product = inventory.get(productName);
        if (product == null) {
