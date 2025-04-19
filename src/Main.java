@@ -42,13 +42,7 @@ public class Main {
      	  produceShop.addProduct(bananas);
      	  produceShop.addProduct(pears);
           	 
-     	  market.run();
-         
-        
-        
-       
-
-        
-
+     	  market.run();   
+    
     }
 }
