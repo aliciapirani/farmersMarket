@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Customer {
 
     private String name;
-    private ArrayList<Product> purchasedProducts = new ArrayList<>();
+//    private ArrayList<Product> purchasedProducts = new ArrayList<>();
 
     //constructor
     public Customer(String name) {
@@ -19,9 +19,9 @@ public class Customer {
         this.name = name;
     }
 
-    public ArrayList<Product> getPurchasedProducts() {
-        return purchasedProducts;
-    }
+//    public ArrayList<Product> getPurchasedProducts() {
+//        return purchasedProducts;
+//    }
 
     //method to leave a review for a product
 
